@@ -4,10 +4,14 @@ This repo holds the source code and scripts for reproduce the experiments of k-p
 
 ## Usage
 
+```
+Requirement on main memory: 16GB.
+```
+
 1. If you run in Eclipse, just go to "au.edu.rmit.trajectory.expriments.kpathEfficiency", and click the "run configuration", creat a new java application, and fill the following parameters:
 
 ```
-E:\dataset\new_porto\reassign\porto_mm_edge.dat 10 1000000 E:\dataset\new_porto\reassign\new_edge_street.txt E:\dataset\new_porto\reassign\new_graph.txt
+.\data_porto\reassign\porto_mm_edge.dat 10 1000000 .\data_porto\reassign\new_edge_street.txt .\data_porto\reassign\new_graph.txt Porto
 ```
 
 Then, all the result will be recorded into the log file under the "logs" folder.
@@ -75,5 +79,11 @@ A visualization using dynamic flow can be found in http://115.146.93.77:8080/TTo
 
 ## Citation
 
-
+```
+@inproceedings{wang2019kpaths,
+  author          = {{Wang}, Sheng and {Bao}, Zhifeng and {Culpepper}, J. Shane and {Sellis}, Timos and {Qin}, Xiaolin},
+  title           = "{Fast Large-Scale Trajectory Clustering}",
+  year            = 2019,
+}
+```
 
