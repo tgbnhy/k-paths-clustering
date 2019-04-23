@@ -26,7 +26,7 @@ arg[5] is the city name.
 ```
 mvn clean package
 ```
-A .jar file will be generated under folder "target".
+A file "torch-clus-0.0.1-SNAPSHOT.jar" will be generated under folder "target".
 
 ```
  java -Xmx16192M -cp ./torch-clus-0.0.1-SNAPSHOT.jar au.edu.rmit.trajectory.expriments.EBD ./data_porto/porto_mm_edge.dat 10 100000 ./data_porto/new_edge_street.txt ./data_porto/new_graph.txt porto
