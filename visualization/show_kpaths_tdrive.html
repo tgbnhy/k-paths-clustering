@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>T-drive clustering</title>
+
+    <style type="text/css">
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        #map {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+<input type="file" id="fileinput" style="position: absolute; left: 50px; top: 50px; z-index: 5"/>
+<div id="map"></div>
+<canvas id="canvas"></canvas>
+
+<script type="text/javascript" src="//apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="//api.map.baidu.com/api?v=2.0&ak=1XjLLEhZhQNUzd93EjU5nOGQ"></script>
+<script type="text/javascript"
+        src="http://mapv.baidu.com/build/mapv.min.js"></script>
+<script type="text/javascript">
+
+    var colors = [
+        '#800000',
+        '#9A6324',
+        '#808000',
+        '#000075',
+        '#f032e6',
+        '#e6194B',
+        '#f58231',
+        '#ffe119',
+        '#3cb44b',
+        '#4363d8',
+        '#bfef45',
+        '#42d4f4',
+        '#911eb4',
+        '#469990',
+        '#fabebe',
+        '#ffd8b1',
+        '#fffac8',
+        '#aaffc3',
+        '#e6beff',
+    ]
+
+
+
+
+
+    document.getElementById('fileinput').addEventListener('change', readSingleFile, false);
+
+    // 百度地图API功能
+    var map = new BMap.Map("map", {
+        enableMapClick: false
+    });    // 创建Map实例
+//-8.594061, 41.162726
+    map.centerAndZoom(new BMap.Point(116.4074, 39.9042), 14);  // 初始化地图,设置中心点坐标和地图级别
+
+    map.setMapStyle({
+        styleJson: [
+            {
+                "featureType": "all",
+                "elementType": "labels",
+                "stylers": {
+                    "color": "#8b8787",
+                    "lightness": -19,
+                    "visibility": "on"
+                }
+            },
+            {
+                "featureType": "all",
+                "elementType": "labels",
+                "stylers": {
+                    "color": "#8b8787",
+                    "visibility": "off"
+                }
+            },
+            {
+                "featureType": "green",
+                "elementType": "geometry",
+                "stylers": {
+                    "color": "#1b1b1b",
+                    "visibility": "off"
+                }
+            },
+            {
+                "featureType": "water",
+                "elementType": "geometry",
+                "stylers": {
+                    "color": "#181818",
+                    "visibility": "off"
+                }
+            },
+            {
+                "featureType": "building",
+                "elementType": "geometry",
+                "stylers": {
+                    "visibility": "off"
+                }
+            },
+            {
+                "featureType": "highway",
+                "elementType": "all",
+                "stylers": {
+                    "visibility": "off"
+                }
+            },
+            {
+                "featureType": "arterial",
+                "elementType": "geometry",
+                "stylers": {
+                    "visibility": "off"
+                }
+            },
+            {
+                "featureType": "subway",
+                "elementType": "all",
+                "stylers": {
+                    "visibility": "off"
+                }
+            },
+            {
+                "featureType": "railway",
+                "elementType": "geometry",
+                "stylers": {
+                    "visibility": "off"
+                }
+            },
+            {
+                "featureType": "all",
+                "elementType": "labels.text.stroke",
+                "stylers": {
+                    "visibility": "off"
+                }
+            },
+            {
+                "featureType": "manmade",
+                "elementType": "geometry",
+                "stylers": {
+                    "visibility": "off"
+                }
+            },
+            {
+                "featureType": "local",
+                "elementType": "geometry",
+                "stylers": {
+                    "visibility": "on"
+                }
+            },
+            {
+                "featureType": "subway",
+                "elementType": "geometry",
+                "stylers": {
+                    "visibility": "off"
+                }
+            },
+            {
+                "featureType": "railway",
+                "elementType": "all",
+                "stylers": {
+                    "visibility": "off"
+                }
+            },
+        ]
+    });
+    map.enableScrollWheelZoom(true); // 开启鼠标滚轮缩放
+
+    function readSingleFile(evt) {
+        //Retrieve the first (and only!) File from the FileList object
+        var f = evt.target.files[0];
+
+        if (f) {
+            var r = new FileReader();
+            r.onload = function(e) {
+
+                //parse line from file and generate mapVObject
+                var lines = e.target.result.split('\n');
+                var mapVObjArr = [];
+                for(var i = 0; i < 10; i++){
+                    var tmp = lines[i].replace("\"","");
+                    tmp = tmp.split(":")[2];
+                    tmp = tmp.substr(0, tmp.length - 2);
+                    var mapVObj = {
+                        geometry: {
+                            type:'LineString',
+                            coordinates:JSON.parse(tmp)
+                        }
+                    }
+                    console.log(mapVObj);
+                    mapVObjArr.push(mapVObj);
+                }
+
+                //for each mapV object, put it on a layer with different color
+                let layers = [];
+                for (i = 0; i < 10; i++){
+                    var mapVlineStyle = {
+                        strokeStyle: colors[i],
+                        lineWidth: 4,
+                        draw: 'simple'
+                    };
+
+                    layers.push(new mapv.baiduMapLayer(map, new mapv.DataSet(mapVObjArr[i]), mapVlineStyle));
+                }
+
+
+            }
+            r.readAsText(f);
+        } else {
+            alert("Failed to load file");
+        }
+    }
+
+
+</script>
+
+</body>
+</html>
