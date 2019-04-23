@@ -68,6 +68,8 @@ Download the trajectory dataset from the above link, and put the dataset into "d
 ## Visualization
 We use mapv to visulized the cluster result using different color.
 
+If you are familar with javascript, you can use webstorm to open the webpage and see how the data is demonstrated.
+
 A visualization using dynamic flow can be found in http://115.146.93.77:8080/TTorchServer/.
 
 
