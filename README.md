@@ -1,10 +1,10 @@
 # k-paths
 ## Introduction
-This repo holds the source code and experiments of k-paths clustering.
+This repo holds the source code and scripts for reproduce the experiments of k-paths clustering.
 
 ## Usage
 
-1. If you run in Eclipse, just go to run configuration, creat a new java application, and fill the following parameters:
+1. If you run in Eclipse, just go to "au.edu.rmit.trajectory.expriments.kpathEfficiency", and click the "run configuration", creat a new java application, and fill the following parameters:
 
 E:\dataset\new_porto\reassign\porto_mm_edge.dat 10 1000000 E:\dataset\new_porto\reassign\new_edge_street.txt E:\dataset\new_porto\reassign\new_graph.txt
 
@@ -15,7 +15,7 @@ arg[1] is the number of clusters
 arg[2] is the number of trajectories in the datafile which will be clustered
 arg[3] is the edge info file which contains the street name
 arg[4] is the graph file
-arg[5] is the city name. 
+arg[5] is the city name.
 
 2. If you want to run from commands (recommended):
 A. mvn clean package
@@ -41,12 +41,17 @@ A .jar file will be generated under folder "target".
 We use the map-matched dataset, it covers the road network, and trajectory data composed of integer ids.
 https://sites.google.com/site/shengwangcs/torch
 
+Download the dataset from the above link, and put the dataset into "data_porto" or "data_tdrive".
+
 ## Paper
 
 
 ## Visualization
 We use mapv to visulized the cluster result using different color.
 
+A visualization using dynamic flow can be found in http://115.146.93.77:8080/TTorchServer/.
+
 
 ## Citation
+
 
