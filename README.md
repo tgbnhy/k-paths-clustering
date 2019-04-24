@@ -32,33 +32,32 @@ mvn clean package
 ```
 A file "torch-clus-0.0.1-SNAPSHOT.jar" will be generated under folder "target".
 
-```
- java -Xmx16192M -cp ./torch-clus-0.0.1-SNAPSHOT.jar au.edu.rmit.trajectory.expriments.EBD ./data_porto/porto_mm_edge.dat 10 100000 ./data_porto/new_edge_street.txt ./data_porto/new_graph.txt porto
-```
-
- #run the tdrive clustering
+ #run the tdrive clustering for efficiency comparision.
 ```
  java -Xmx16192M -cp ./torch-clus-0.0.1-SNAPSHOT.jar au.edu.rmit.trajectory.expriments.kpathEfficiency ./data_tdrive/beijing_mm_edge.txt.reassign 10 250997 ./data_tdrive/new_id_edge_raw_beijing.txt ./data_tdrive/beijing_graph_new.txt tdrive
 ```
- #run the porto clustering
+ #run the porto clustering for efficiency comparision.
 ```
  java -Xmx16192M -cp ./torch-clus-0.0.1-SNAPSHOT.jar au.edu.rmit.trajectory.expriments.kpathEfficiency ./data_porto/porto_mm_edge.dat 10 1565595 ./data_porto/new_edge_street.txt ./data_porto/new_graph.txt porto
 ```
  
- #run the test or build index
+ #run the porto clustering, and produce clustering results for visualization.
 ```
  #java -Xmx16192M -cp ./torch-clus-0.0.1-SNAPSHOT.jar au.edu.rmit.trajectory.clustering.Running ./data_porto/porto_mm_edge.dat 10 100000 ./data_porto/new_edge_street.txt ./data_porto/new_graph.txt porto
 ```
- #run the tdrive clustering
+ #run the tdrive clustering, and produce clustering results for visualization.
 ```
  #java -Xmx16192M -cp ./torch-clus-0.0.1-SNAPSHOT.jar au.edu.rmit.trajectory.clustering.Running ./data_tdrive/beijing_mm_edge.txt.reassign 10 10000 ./data_tdrive/new_id_edge_raw_beijing.txt ./data_tdrive/beijing_graph_new.txt tdrive
 ```
  
- #compare with other distance measure
+ #compare with other distance measure in Tdrive dataset
 ```
  java -Xmx16192M -cp ./torch-clus-0.0.1-SNAPSHOT.jar au.edu.rmit.trajectory.expriments.EBD ./data_tdrive/beijing_mm_edge.txt.reassign 10 1000 ./data_tdrive/new_id_edge_raw_beijing.txt ./data_tdrive/beijing_graph_new.txt tdrive
 ```
-
+ #compare with other distance measure on Porto dataset
+```
+ java -Xmx16192M -cp ./torch-clus-0.0.1-SNAPSHOT.jar au.edu.rmit.trajectory.expriments.EBD ./data_porto/porto_mm_edge.dat 10 100000 ./data_porto/new_edge_street.txt ./data_porto/new_graph.txt porto
+```
 
 ## Datasets
 We use the map-matched dataset, it covers the road network, and trajectory data composed of integer ids.
