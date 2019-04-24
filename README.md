@@ -70,15 +70,15 @@ Download the trajectory dataset from the above link, and put the dataset into "d
 
 
 ## Visualization
-We use mapv to visulized the cluster result using different color.
+We use MapV (https://github.com/huiyan-fe/mapv) to visulized the cluster result using different color.
 
 If you are familar with javascript, you can use webstorm to open the webpage and see how the data is demonstrated.
 
-A visualization using dynamic flow can be found in http://115.146.93.77:8080/TTorchServer/.
+A visualization using dynamic flow can also be found in http://115.146.93.77:8080/TTorchServer/.
 
 
 ## Citation
-
+If you use our code for research work, please cite our paper as below:
 ```
 @inproceedings{wang2019kpaths,
   author          = {{Wang}, Sheng and {Bao}, Zhifeng and {Culpepper}, J. Shane and {Sellis}, Timos and {Qin}, Xiaolin},
@@ -86,4 +86,14 @@ A visualization using dynamic flow can be found in http://115.146.93.77:8080/TTo
   year            = 2019,
 }
 ```
-
+If you use our mapped trajectory dataset for research work, please cite our paper as below:
+```
+@inproceedings{wang2018torch,
+  author          = {{Wang}, Sheng and {Bao}, Zhifeng and {Culpepper}, J. Shane and {Xie}, Zizhe and {Liu}, Qizhi and {Qin}, Xiaolin},
+  title           = "{Torch: {A} Search Engine for Trajectory Data}",
+  booktitle       = {Proceedings of the 41th International ACM SIGIR Conference on Research & Development in Information Retrieval},
+  organization    = {ACM},
+  pages     = {535--544},
+  year            = 2018,
+}
+```
