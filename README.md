@@ -5,7 +5,8 @@ This repo holds the source code and scripts for reproduce the experiments of k-p
 ## Usage
 
 ```
-Requirement on main memory if you want to cluster all the trajectories in the dataset: 16GB; otherwise, if you can set the data amount |D|=100000.
+Requirement on main memory if you want to cluster all the trajectories in the dataset: 16GB; 
+otherwise, you can set the data amount |D|=100000 if you have a limit on the memory.
 ```
 
 1. If you run in Eclipse, just go to "au.edu.rmit.trajectory.expriments.kpathEfficiency", and click the "run configuration", creat a new java application, and fill the following parameters:
@@ -13,9 +14,7 @@ Requirement on main memory if you want to cluster all the trajectories in the da
 ```
 .\data_porto\reassign\porto_mm_edge.dat 10 1000000 .\data_porto\reassign\new_edge_street.txt .\data_porto\reassign\new_graph.txt Porto
 ```
-
-Then, all the result will be recorded into the log file under the "logs" folder.
-
+There are six parameters:
 ```
 arg[0] is the trajectory data file
 arg[1] is the number of clusters (k)
@@ -24,6 +23,7 @@ arg[3] is the edge info file which contains the street name
 arg[4] is the road network graph file
 arg[5] is the city name.
 ```
+Then, all the result will be recorded into the log file under the "logs" folder.
 
 2. If you want to run from commands (recommended):
 
@@ -60,10 +60,10 @@ A file "torch-clus-0.0.1-SNAPSHOT.jar" will be generated under folder "target".
 ```
 
 ## Datasets
-We use the map-matched dataset, it covers the road network, and trajectory data composed of integer ids.
+We use the map-matched dataset, and trajectory data composed of integer ids. Since they have a size above the standard of Github, we store it in Google Drive, and you can find the dataset from:
 https://sites.google.com/site/shengwangcs/torch
 
-Download the trajectory dataset from the above link, and put the dataset into "data_porto" or "data_tdrive".
+Download the trajectory dataset from the above link, and put the dataset into "data_porto" or "data_tdrive". (The road network graph datasets are already there.)
 
 ## Paper
 
@@ -71,7 +71,7 @@ Download the trajectory dataset from the above link, and put the dataset into "d
 ## Visualization
 We use MapV (https://github.com/huiyan-fe/mapv) to visulized the cluster result using different color.
 
-If you are familar with javascript, you can use webstorm to open the webpage and see how the data is demonstrated.
+If you are familar with javascript, you can use WebStorm to open the webpage and see how the data is demonstrated.
 
 A visualization using dynamic flow can also be found in http://115.146.93.77:8080/TTorchServer/.
 
