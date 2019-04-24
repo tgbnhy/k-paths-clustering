@@ -1,6 +1,6 @@
 # k-paths: fast large-scale trajectory clustering
 ## Introduction
-This repo holds the source code and scripts for reproduce the experiments of k-paths trajectory clustering.
+This repo holds the source code and scripts for reproduce the key experiments of k-paths trajectory clustering.
 
 ## Usage
 
