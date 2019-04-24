@@ -1,6 +1,6 @@
 # k-paths
 ## Introduction
-This repo holds the source code and scripts for reproduce the experiments of k-paths clustering.
+This repo holds the source code and scripts for reproduce the experiments of k-paths trajectory clustering.
 
 ## Usage
 
@@ -65,15 +65,12 @@ https://sites.google.com/site/shengwangcs/torch
 
 Download the trajectory dataset from the above link, and put the dataset into "data_porto" or "data_tdrive". (The road network graph datasets are already there.)
 
-## Paper
-
-
 ## Visualization
 We use MapV (https://github.com/huiyan-fe/mapv) to visulized the cluster result using different color.
 
-If you are familar with javascript, you can use WebStorm to open the webpage and see how the data is demonstrated.
+If you are familar with javascript, you can use WebStorm (https://www.jetbrains.com/webstorm/) to open the webpage and see how the data is demonstrated.
 
-A visualization using dynamic flow can also be found in http://115.146.93.77:8080/TTorchServer/.
+An online visualization using dynamic flow can also be found in http://115.146.93.77:8080/TTorchServer/.
 
 
 ## Citation
