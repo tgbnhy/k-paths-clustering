@@ -5,7 +5,7 @@ This repo holds the source code and scripts for reproduce the experiments of k-p
 ## Usage
 
 ```
-Requirement on main memory: 16GB.
+Requirement on main memory if you want to cluster all the trajectories in the dataset: 16GB; otherwise, if you can set the data amount |D|=100000.
 ```
 
 1. If you run in Eclipse, just go to "au.edu.rmit.trajectory.expriments.kpathEfficiency", and click the "run configuration", creat a new java application, and fill the following parameters:
@@ -17,11 +17,11 @@ Requirement on main memory: 16GB.
 Then, all the result will be recorded into the log file under the "logs" folder.
 
 ```
-arg[0] is the data file
-arg[1] is the number of clusters
-arg[2] is the number of trajectories in the datafile which will be clustered
+arg[0] is the trajectory data file
+arg[1] is the number of clusters (k)
+arg[2] is the number of trajectories in the datafile which will be clustered (|D|)
 arg[3] is the edge info file which contains the street name
-arg[4] is the graph file
+arg[4] is the road network graph file
 arg[5] is the city name.
 ```
 
