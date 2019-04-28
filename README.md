@@ -4,10 +4,6 @@ This repo holds the source code and scripts for reproduce the key experiments of
 
 ## Usage
 
-```
-Requirement on main memory if you want to cluster all the trajectories in the dataset: 16GB; 
-otherwise, you can set the data amount |D|=100000 if you have a limit on the memory.
-```
 
 1. If you run in Eclipse, just go to "au.edu.rmit.trajectory.expriments.kpathEfficiency", and click the "run configuration", creat a new java application, and fill the following parameters:
 
