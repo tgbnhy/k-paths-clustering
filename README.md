@@ -71,7 +71,7 @@ We use MapV (https://github.com/huiyan-fe/mapv) to visulized the cluster result 
 If you are familar with javascript, you can use WebStorm (https://www.jetbrains.com/webstorm/) to open the webpage and see how the data is demonstrated.
 
 An online visualization using dynamic flow can also be found in http://203.101.224.103:8080/TTorchServer/.
-
+![alt text](visualization/direction1.gif)
 
 ## Citation
 If you use our code for research work, please cite our paper as below:
