@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="52da0566-7b87-4ae4-ba97-f552734b23a4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../target/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/porto-TRACLUS.html" beforeDir="false" afterPath="$PROJECT_DIR$/porto-TRACLUS.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/porto-road-network.html" beforeDir="false" afterPath="$PROJECT_DIR$/porto-road-network.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/t-drive-TRACLUS.html" beforeDir="false" afterPath="$PROJECT_DIR$/t-drive-TRACLUS.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/t-drive-road-network.html" beforeDir="false" afterPath="$PROJECT_DIR$/t-drive-road-network.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,22 +18,26 @@
     <session id="-120935640">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="csv" value="4" />
-          <entry key="html" value="25" />
+          <entry key="csv" value="6" />
+          <entry key="html" value="36" />
+          <entry key="kpaths_color0_graph" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSV" value="4" />
-          <entry key="HTML" value="25" />
+          <entry key="CSV" value="6" />
+          <entry key="HTML" value="36" />
+          <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -52,17 +53,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file:$PROJECT_DIR$/../../../../../../../..//$PROJECT_DIR$/t-drive-TRACLUS.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="41" lean-forward="true" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -83,7 +74,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="1920" />
     <option name="height" value="1040" />
   </component>
@@ -138,18 +129,19 @@
       <workItem from="1556069220550" duration="69000" />
       <workItem from="1556069336386" duration="59000" />
       <workItem from="1556069515606" duration="1365000" />
-      <workItem from="1556073833262" duration="104000" />
+      <workItem from="1556073833262" duration="267000" />
+      <workItem from="1557027273832" duration="81000" />
+      <workItem from="1558314946373" duration="130000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1597000" />
+    <option name="totallyTimeSpent" value="1971000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1040" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973433" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24920969" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -197,15 +189,15 @@
     <entry file="file:$PROJECT_DIR$/../../../../../../../..//$PROJECT_DIR$/new_porto_mapv.csv">
       <provider selected="true" editor-type-id="LargeFileEditor" />
     </entry>
-    <entry file="file:$PROJECT_DIR$/../../../../../../../..//$PROJECT_DIR$/show_kpaths_tdrive.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file:$PROJECT_DIR$/../../../../../../../..//$PROJECT_DIR$/porto-road-network.html">
+    <entry file="file:$PROJECT_DIR$/../../../../../../../..//$PROJECT_DIR$/show_kpaths_porto.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="161" column="56" lean-forward="true" selection-start-line="161" selection-start-column="56" selection-end-line="161" selection-end-column="56" />
+        <state relative-caret-position="544">
+          <caret line="32" column="18" lean-forward="true" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
         </state>
       </provider>
+    </entry>
+    <entry file="file:$PROJECT_DIR$/../../../../../../../..//$PROJECT_DIR$/porto_mapv.csv">
+      <provider selected="true" editor-type-id="LargeFileEditor" />
     </entry>
     <entry file="file:$PROJECT_DIR$/../../../../../../../..//$PROJECT_DIR$/porto-TRACLUS.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -214,27 +206,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:$PROJECT_DIR$/../../../../../../../..//$PROJECT_DIR$/porto_mapv.csv">
+    <entry file="file:$PROJECT_DIR$/../../../../../../../..//$PROJECT_DIR$/beijing_mapv.csv">
       <provider selected="true" editor-type-id="LargeFileEditor" />
     </entry>
-    <entry file="file:$PROJECT_DIR$/../../../../../../../..//$PROJECT_DIR$/show_kpaths_porto.html">
+    <entry file="file:$PROJECT_DIR$/../../../../../../../..//$PROJECT_DIR$/show_kpaths_tdrive.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:$PROJECT_DIR$/../../../../../../../..//$PROJECT_DIR$/t-drive-TRACLUS.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="18" lean-forward="true" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+        <state relative-caret-position="476">
+          <caret line="28" column="41" lean-forward="true" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file:$PROJECT_DIR$/../../../../../../../..//$PROJECT_DIR$/t-drive-road-network.html">
+    <entry file="file:$PROJECT_DIR$/../../../../../../../..//$PROJECT_DIR$/1565595.kpaths_color0_graph">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:$PROJECT_DIR$/../../../../../../../..//$PROJECT_DIR$/porto-road-network.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file:$PROJECT_DIR$/../../../../../../../..//$PROJECT_DIR$/t-drive-TRACLUS.html">
+    <entry file="file:$PROJECT_DIR$/../../../../../../../..//$PROJECT_DIR$/t-drive-road-network.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="41" lean-forward="true" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+        <state relative-caret-position="289">
+          <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
         </state>
       </provider>
     </entry>
