@@ -1,7 +1,7 @@
 # Fast large-scale trajectory clustering
 ## Technical Report
 
-https://github.com/tgbnhy/k-paths-clustering/blob/master/k-paths-vldb.pdf
+https://t4research.github.io/k-paths-tr.pdf
 
 ## Introduction
 This repo holds the source code and scripts for reproduce the key experiments of k-paths trajectory clustering.
