@@ -76,10 +76,15 @@ An online visualization using dynamic flow can also be found in http://203.101.2
 ## Citation
 If you use our code for research work, please cite our paper as below:
 ```
-@inproceedings{wang2019kpaths,
-  author          = {{Wang}, Sheng and {Bao}, Zhifeng and {Culpepper}, J. Shane and {Sellis}, Timos and {Qin}, Xiaolin},
-  title           = "{Fast Large-Scale Trajectory Clustering}",
-  year            = 2019,
+@article{wang2019fast,
+  title={Fast large-scale trajectory clustering},
+  author={Wang, Sheng and Bao, Zhifeng and Culpepper, J Shane and Sellis, Timos and Qin, Xiaolin},
+  journal={Proceedings of the VLDB Endowment},
+  volume={13},
+  number={1},
+  pages={29--42},
+  year={2019},
+  publisher={VLDB Endowment}
 }
 ```
 If you use our mapped trajectory dataset for research work, please cite our paper as below:
