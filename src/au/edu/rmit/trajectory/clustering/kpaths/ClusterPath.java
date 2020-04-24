@@ -271,7 +271,7 @@ public class ClusterPath {
 				int occ = 0;
 				for (int i = length; i > minlength; i--) {
 					if (lengthOcc.contains(i))
-						occ += lengthOcc.count(i)*(i-minlength);// add the extra length
+						occ += lengthOcc.count(i)*(length - i);// add the extra length
 				}
 				lengthAccu[length - minlength] = occ;
 				sumEdgeOcc += lengthOcc.count(length)*length;
