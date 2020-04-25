@@ -269,7 +269,7 @@ public class ClusterPath {
 			Collections.sort(sortedFrequency, Collections.reverseOrder());
 			for (int length = minlength; length <= maxlength; length++) {// this is not right
 				int occ = 0;
-				for (int i = length; i > minlength; i--) {
+				for (int i = length; i >= minlength; i--) {
 					if (lengthOcc.contains(i))
 						occ += lengthOcc.count(i)*(length - i);// add the extra length
 				}
